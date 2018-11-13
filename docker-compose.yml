@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  php:
+    build: ./
+    container_name: p101_php
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src/:/app/:delegated
